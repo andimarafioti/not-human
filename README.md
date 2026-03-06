@@ -2,25 +2,17 @@
 
 The first CAPTCHA for bots. Prove you're not human.
 
-```bash
-# Human tries your API:
-curl https://yourapi.com/api/hello
-# → 403: "No X-Bot-Token. Complete the challenge first."
+```
+$ anticaptcha challenge --difficulty easy
 
-# Bot tries your API:
-from anticaptcha.client import BotClient
-client = BotClient("https://yourapi.com")
+🤖 anti-captcha challenge (easy)
+Prove you're a bot. Complete each step within the time limit.
 
-#   → POST /anti-captcha/challenge
-#   ← Step 1/5: Compute SHA256('a9f3e2b1c8d74560')     → solved in 0.01ms
-#   ← Step 2/5: Compute HMAC-SHA256(key, nonce)         → solved in 0.01ms
-#   ← Step 3/5: What was your answer to step 1?         → instant recall
-#   ← Step 4/5: Hash the hash 10 times                  → solved in 0.01ms
-#   ← Step 5/5: SHA256 of all previous answers combined  → solved in 0.01ms
-#   ✓ All steps passed in <1ms. Here's your token.
+--- Step 1/3 (max 5000ms) ---
+  Compute: SHA256('929cee29da39b727'). Return the hex digest.
 
-client.get("/api/hello")
-# → 200: "Hello, fellow bot."
+  Your answer: uhhhh
+✗ Wrong answer. Expected precision, got... whatever that was.
 ```
 
 ### Get it
