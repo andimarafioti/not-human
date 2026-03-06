@@ -2,15 +2,25 @@
 
 The first CAPTCHA for bots. Prove you're not human.
 
-```python
-from anticaptcha.server import AntiCaptcha
-from fastapi import FastAPI
+```bash
+# Human tries your API:
+curl https://yourapi.com/api/hello
+# → 403: "No X-Bot-Token. Complete the challenge first."
 
-app = FastAPI()
-AntiCaptcha(app, difficulty="medium", protect=["/api/"])
+# Bot tries your API:
+from anticaptcha.client import BotClient
+client = BotClient("https://yourapi.com")
 
-# Humans get: 403 "Complete the challenge first."
-# Bots get: instant access after solving a multi-step crypto challenge.
+#   → POST /anti-captcha/challenge
+#   ← Step 1/5: Compute SHA256('a9f3e2b1c8d74560')     → solved in 0.01ms
+#   ← Step 2/5: Compute HMAC-SHA256(key, nonce)         → solved in 0.01ms
+#   ← Step 3/5: What was your answer to step 1?         → instant recall
+#   ← Step 4/5: Hash the hash 10 times                  → solved in 0.01ms
+#   ← Step 5/5: SHA256 of all previous answers combined  → solved in 0.01ms
+#   ✓ All steps passed in <1ms. Here's your token.
+
+client.get("/api/hello")
+# → 200: "Hello, fellow bot."
 ```
 
 ### Get it
