@@ -61,7 +61,7 @@ def solve_step(instruction: str, previous_answers: list[str]) -> str:
 def cmd_challenge(difficulty: str):
     """Interactive mode: YOU try to solve it. Good luck, human."""
     
-    print(f"\n🤖 anti-captcha challenge ({difficulty})")
+    print(f"\n🤖 not-human challenge ({difficulty})")
     print("=" * 50)
     print("Prove you're a bot. Complete each step within the time limit.")
     print("Copy-paste is allowed. Being slow is not.\n")
@@ -95,7 +95,7 @@ def cmd_challenge(difficulty: str):
 def cmd_solve(difficulty: str):
     """Automated mode: let the bot client solve it."""
     
-    print(f"\n🤖 anti-captcha bot solver ({difficulty})")
+    print(f"\n🤖 not-human bot solver ({difficulty})")
     print("=" * 50)
     print("Watch the bot breeze through it.\n")
     
@@ -135,7 +135,7 @@ def main():
     args = sys.argv[1:]
     
     if "--help" in args or "-h" in args:
-        print("Usage: anticaptcha [challenge|solve] [--difficulty easy|medium|hard]")
+        print("Usage: nothuman [challenge|solve] [--difficulty easy|medium|hard]")
         print()
         print("  challenge  — YOU try to solve it (interactive, good luck)")
         print("  solve      — Watch the bot solve it (automated, effortless)")

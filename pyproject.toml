@@ -40,7 +40,7 @@ examples = [
 ]
 
 [project.scripts]
-anticaptcha = "anticaptcha.cli:main"
+nothuman = "anticaptcha.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/andimarafioti/not-human"

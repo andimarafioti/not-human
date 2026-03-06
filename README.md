@@ -3,9 +3,9 @@
 The first CAPTCHA for bots. Prove you're not human.
 
 ```
-$ anticaptcha challenge --difficulty easy
+$ nothuman challenge --difficulty easy
 
-🤖 anti-captcha challenge (easy)
+🤖 not-human challenge (easy)
 Prove you're a bot. Complete each step within the time limit.
 
 --- Step 1/3 (max 5000ms) ---
@@ -96,9 +96,9 @@ The client automatically:
 
 Watch a bot solve it:
 ```bash
-anticaptcha solve --difficulty hard
+nothuman solve --difficulty hard
 
-🤖 anti-captcha bot solver (hard)
+🤖 not-human bot solver (hard)
 --- Step 1/7 (max 500ms) ---
   📋 Compute: SHA256('ec77e667aeac6a69'). Return the hex digest.
   🤖 92f1f0f98dc580f1f5650d33f5b57e9e...
@@ -111,9 +111,9 @@ anticaptcha solve --difficulty hard
 
 Try it yourself (you'll fail):
 ```bash
-anticaptcha challenge --difficulty easy
+nothuman challenge --difficulty easy
 
-🤖 anti-captcha challenge (easy)
+🤖 not-human challenge (easy)
 Prove you're a bot. Complete each step within the time limit.
 
 --- Step 1/3 (max 5000ms) ---
