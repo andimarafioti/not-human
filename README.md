@@ -2,10 +2,6 @@
 
 The first CAPTCHA for bots. Prove you're not human.
 
-```bash
-pip install not-human
-```
-
 ```python
 from anticaptcha.server import AntiCaptcha
 from fastapi import FastAPI
@@ -15,6 +11,12 @@ AntiCaptcha(app, difficulty="medium", protect=["/api/"])
 
 # Humans get: 403 "Complete the challenge first."
 # Bots get: instant access after solving a multi-step crypto challenge.
+```
+
+### Get it
+
+```bash
+pip install not-human
 ```
 
 ---
