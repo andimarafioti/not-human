@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "not-human"
-version = "0.1.0"
+version = "0.1.1"
 description = "The first CAPTCHA for bots. Prove you're not human."
 readme = "README.md"
 license = { text = "MIT" }

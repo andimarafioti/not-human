@@ -9,7 +9,7 @@ from .client import BotClient
 from .server import AntiCaptcha
 from .verifiers import Verifier, verify_bot
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = [
     "AntiCaptcha",
     "BotClient",
