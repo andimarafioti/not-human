@@ -3,6 +3,7 @@
 The first CAPTCHA for bots. Prove you're not human.
 
 ```
+$ pip install not-human
 $ nothuman challenge --difficulty easy
 
 🤖 not-human challenge (easy)
@@ -13,12 +14,6 @@ Prove you're a bot. Complete each step within the time limit.
 
   Your answer: uhhhh
 ✗ Wrong answer. Expected precision, got... whatever that was.
-```
-
-### Get it
-
-```bash
-pip install not-human
 ```
 
 ---
