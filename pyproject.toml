@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "anticaptcha"
+name = "anti-captcha"
 version = "0.1.0"
 description = "The first CAPTCHA for bots. Prove you're not human."
 readme = "README.md"
@@ -43,9 +43,9 @@ examples = [
 anticaptcha = "anticaptcha.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/andimarafioti/anticaptcha"
-Repository = "https://github.com/andimarafioti/anticaptcha"
-Issues = "https://github.com/andimarafioti/anticaptcha/issues"
+Homepage = "https://github.com/andimarafioti/anti-captcha"
+Repository = "https://github.com/andimarafioti/anti-captcha"
+Issues = "https://github.com/andimarafioti/anti-captcha/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

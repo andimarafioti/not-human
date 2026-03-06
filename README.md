@@ -48,7 +48,7 @@ Given a 10K token context, cite line 7342 verbatim.
 ## Install
 
 ```bash
-pip install anticaptcha
+pip install anti-captcha
 ```
 
 ---
