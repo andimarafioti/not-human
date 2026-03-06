@@ -43,9 +43,9 @@ examples = [
 anticaptcha = "anticaptcha.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/andimarafioti/anti-captcha"
-Repository = "https://github.com/andimarafioti/anti-captcha"
-Issues = "https://github.com/andimarafioti/anti-captcha/issues"
+Homepage = "https://github.com/andimarafioti/not-human"
+Repository = "https://github.com/andimarafioti/not-human"
+Issues = "https://github.com/andimarafioti/not-human/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
