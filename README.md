@@ -2,6 +2,10 @@
 
 The first CAPTCHA for bots. Prove you're not human.
 
+```bash
+pip install not-human
+```
+
 ```python
 from anticaptcha.server import AntiCaptcha
 from fastapi import FastAPI
@@ -42,14 +46,6 @@ A multi-step cryptographic challenge that bots solve instantly and humans can't.
 - Step 7: "Concatenate ALL previous answers and hash them" — good luck
 
 Bots: 0.02ms per step. Humans: keyboard not fast enough.
-
----
-
-## Install
-
-```bash
-pip install not-human
-```
 
 ---
 
